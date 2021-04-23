@@ -33,7 +33,7 @@ export default function App() {
     const media = listIdade.reduce(
       (acc, currentVal) => (acc + currentVal) / listIdade.length
     );
-    Alert.alert(`${media}`);
+    Alert.alert(`Media:${media} / Total Pessoas: ${listIdade.length}`);
   }
 
   return (
