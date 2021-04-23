@@ -18,6 +18,9 @@ export default function App() {
   const inputNum = useRef<any>();
 
   function handleAddAge() {
+    if (!Number.isInteger(idade)) {
+      return Alert.alert("Digite um numero inteiro");
+    }
     setListIdade((oldVal: any) => [...oldVal, idade]);
     inputNum.current.text = "";
   }
